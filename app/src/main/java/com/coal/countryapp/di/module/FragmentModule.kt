@@ -21,7 +21,7 @@ class FragmentModule( val fragment: BaseFragement<*>) {
         repo: FactRepository
     ): HomeViewModel = ViewModelProviders.of(
         fragment, ViewModelProviderFactory(HomeViewModel::class){
-            HomeViewModel() }).get(HomeViewModel::class.java)
+            HomeViewModel(repo, netWorkService, compositeDisposable) }).get(HomeViewModel::class.java)
 
 
 

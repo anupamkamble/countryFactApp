@@ -5,6 +5,7 @@ import com.coal.countryapp.CountryApplication
 import com.coal.countryapp.data.remote.EndPoints
 import com.coal.countryapp.data.remote.NetWorkService
 import com.coal.countryapp.data.remote.NetworkClient
+import com.coal.countryapp.utilities.NetworkConnectivity
 import dagger.Module
 import dagger.Provides
 
@@ -29,5 +30,9 @@ class AppModule(var application : CountryApplication) {
     @Singleton
     @Provides
     fun provideApplication(): Application = application
+
+    @Singleton
+    @Provides
+    fun provideNetWorkConnectivity(): NetworkConnectivity = NetworkConnectivity(application.applicationContext)
 
 }

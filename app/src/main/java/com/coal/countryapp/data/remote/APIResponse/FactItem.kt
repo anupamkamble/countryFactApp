@@ -3,17 +3,17 @@ package com.coal.countryapp.data.remote.APIResponse
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class RowsItem(
+data class FactItem(
 
 	@SerializedName("imageHref")
 	@Expose
 	val imageHref: String? = null,
 
-	@field:SerializedName("description")
+	@SerializedName("description")
 	@Expose
 	val description: String? = null,
 
-	@field:SerializedName("title")
+	@SerializedName("title")
 	@Expose
 	val title: String? = null
 )

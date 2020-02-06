@@ -53,4 +53,19 @@ dependencies {
 
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
+
+    // loggin
+    implementation "com.jakewharton.timber:timber:4.7.1"
+
+    // Reactive
+    implementation "io.reactivex.rxjava2:rxjava:2.2.3"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.0"
+
+    //recyclerView
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+
+
+    //swipeTOFresh
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
 }

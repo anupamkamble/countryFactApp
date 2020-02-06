@@ -11,5 +11,5 @@ data class FactResponse(
 
 	@SerializedName("rows")
 	@Expose
-	val rows: List<RowsItem?>? = null
+	val rows: List<FactItem?>? = null
 )
