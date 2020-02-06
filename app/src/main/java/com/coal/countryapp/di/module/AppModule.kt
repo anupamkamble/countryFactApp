@@ -15,15 +15,18 @@ import javax.inject.Singleton
 class AppModule(var application : CountryApplication) {
 
     @Singleton
+    @Provides
     fun provideNetWorkService() : NetWorkService =
         NetworkClient.create(EndPoints.BASE_URL,
             application.cacheDir,
             10 * 1024 * 1024
         )
 
+    @Singleton
     @Provides
     fun provideCompositeDeposible() : CompositeDisposable = CompositeDisposable()
 
+    @Singleton
     @Provides
     fun provideApplication(): Application = application
 
